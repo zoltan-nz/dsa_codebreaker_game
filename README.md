@@ -1,3 +1,9 @@
+# DsaCodebreakerGame
+
+## Installation
+
+    $ gem install dsa_codebreaker_game
+
 #A variation on the mastermind game
 
 ##The Star Jam Challenge
@@ -30,3 +36,4 @@ The user input is compared to the code patch and the following feedback is provi
 © Copyright Digital Skills Academy 2011-12. All rights reserved.
 
 Conor O’Reilly
+

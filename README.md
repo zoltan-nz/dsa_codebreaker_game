@@ -43,3 +43,8 @@ Conor O’Reilly
 - Nice, OOP solution for console: https://github.com/PavelTyk/technical-test/blob/master/lib/editor.rb
 - A simple master mind game. Gave idea how could separate objects.
 https://gist.github.com/mariozig/4512157
+
+Further visited websites:
+- http://guides.rubygems.org/make-your-own-gem/
+- http://ruby-doc.org/
+- http://stackoverflow.com/users/1348601/szines

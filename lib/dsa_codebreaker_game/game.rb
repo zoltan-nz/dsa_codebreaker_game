@@ -5,7 +5,9 @@ module DsaCodebreakerGame
     def initialize
       @code = Code.new
       @gamer = Gamer.new
-      @console = Console.new(STDOUT)
+      @console = Console.new
+      @clues = 0
+      @figured_out = ['_','_','_','_']
     end
 
     def start
@@ -13,16 +15,14 @@ module DsaCodebreakerGame
       looper
     end
 
+private
+
     def looper
 
-      code, guessed = "_ _ _ _"
-      clues = 0
-
       loop do
+        @console.printer(@figured_out, @clues, @gamer)
 
-        @console.printer(code, guessed, clues)
-
-        g = @console.input
+        g = @console.input[0..3]
 
         if @gamer.history.include?g
           @console.duplicatepatches
@@ -36,25 +36,61 @@ module DsaCodebreakerGame
           exit
         end
 
+        @clues = 0
+        @remained = 4
+
         evaluate
 
+        if @gamer.died?
+          @console.lost(@code.join(" "))
+          again
+        end
+
+        if @remained == 0
+          @console.win
+          again
+        end
+
+
+      end
+
+
+    end
+
+    def again
+      if @console.want_to_play_again?
+        game = DsaCodebreakerGame::Game.new
+        game.start
+      else
+        @console.exitmessage
+        exit
       end
     end
+
 
     #Inspiration from here: https://gist.github.com/mariozig/4512157
     def evaluate
 
-    end
+      counter = @gamer.guess.length
+      @gamer.guess.each_with_index do |char, i|
 
 
-    def close_match
+        if @code[i] == char
 
-    end
+          @figured_out[i] = char
+          @remained-=1
+        elsif @code.include?(char)
 
-    def exact_match
+          @clues+=1
+        else
+
+          counter-=1
+        end
+      end
+
+      @gamer.lost_a_life if counter == 0
 
     end
 
   end
-
 end

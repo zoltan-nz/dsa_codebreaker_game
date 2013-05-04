@@ -7,6 +7,7 @@ module DsaCodebreakerGame
     def initialize
       @lives = 8
       @history = []
+      @guess = ['_','_','_','_']
     end
 
     def lost_a_life
@@ -14,7 +15,7 @@ module DsaCodebreakerGame
     end
 
     def died?
-      @lives == 0
+      @lives < 0
     end
 
     def guess=(guess)

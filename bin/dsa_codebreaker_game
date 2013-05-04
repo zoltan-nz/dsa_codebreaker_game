@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require 'dsa_codebreaker_game'
+
+game = DsaCodebreakerGame::Game.new
+game.start

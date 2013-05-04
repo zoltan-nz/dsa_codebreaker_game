@@ -37,3 +37,9 @@ The user input is compared to the code patch and the following feedback is provi
 
 Conor O’Reilly
 
+##Inspirations:
+
+- From my previous console app: https://github.com/szines/graphed
+- Nice, OOP solution for console: https://github.com/PavelTyk/technical-test/blob/master/lib/editor.rb
+- A simple master mind game. Gave idea how could separate objects.
+https://gist.github.com/mariozig/4512157

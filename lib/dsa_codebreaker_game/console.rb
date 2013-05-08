@@ -48,7 +48,7 @@ module DsaCodebreakerGame
       print "Do you want to play again (Y/N)?"
       loop do
           i = input("exit")
-          case i
+          case i.capitalize
             when "Y"
               return true
             when "N"

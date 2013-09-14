@@ -48,3 +48,7 @@ Further visited websites:
 - http://guides.rubygems.org/make-your-own-gem/
 - http://ruby-doc.org/
 - http://stackoverflow.com/users/1348601/szines
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/szines/dsa_codebreaker_game/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

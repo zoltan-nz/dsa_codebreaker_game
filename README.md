@@ -1,15 +1,12 @@
-# DsaCodebreakerGame
+# DSA Codebreaker Game
 
 ## Installation
 
     $ gem install dsa_codebreaker_game
 
-#A variation on the mastermind game
+#A variation of the mastermind game
 
-##The Star Jam Challenge
-
-###STAGE 1: Build it as per spec below with text based display
->Build a game of code breaker
+##Requirements
 
 The game starts by choosing the code patch which is a sequence of four colours from the following available colours red(R), orange (O), yellow (Y), green (G), blue (B), Indigo (I), and violet (V). The code patch is not displayed to the user only 4 lines are displayed ( _ _ _ _ ) and lives = 8.
 
@@ -48,7 +45,4 @@ Further visited websites:
 - http://guides.rubygems.org/make-your-own-gem/
 - http://ruby-doc.org/
 - http://stackoverflow.com/users/1348601/szines
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/szines/dsa_codebreaker_game/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
